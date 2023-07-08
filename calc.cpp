@@ -19,28 +19,39 @@ int divv(int x, int y){
 }
 
 int main()
-{
-	int x,y;
-	char op;
-
-	cout << " Enter op: ";
-	cin>>op;
-	cout << "Enter the First number: ";
-	cin>>x;
-	cout << "Enter the sec number: ";
-	cin>>y;
+{		while(true){
 	
-	if (op == '+') {
-		cout << x << " + " << y << " = " << add(x, y);
-	} else if (op == '-'){
-		cout << x << " - " << y << " = " << sub(x, y);
-	} else if (op == '*'){
-		cout << x << " * " << y << " = " << mul(x, y);
-	} else if (op == '/'){
-		cout << x << " / " << y << " = " << div(x, y);
-	} else {
-		cout << "Please use correct op" << endl;
-	}
+		int x,y;
+		char op;
 	
-	return (0);
+		cout << " Enter op( +,-,*,/) ";
+		cin>>op;
+		cout << "Enter the First number: ";
+		cin>>x;
+		cout << "Enter the sec number: ";
+		cin>>y;
+		
+		if (op == '+') {
+			cout << x << " + " << y << " = " << add(x, y);
+		} else if (op == '-'){
+			cout << x << " - " << y << " = " << sub(x, y);
+		} else if (op == '*'){
+			cout << x << " * " << y << " = " << mul(x, y);
+		} else if (op == '/'){
+			cout << x << " / " << y << " = " << divv(x, y);
+		} else {
+			cout << "Please use correct op" << endl;
+		}
+		char input;
+		cout << "\n Do you want to continue (y/n) ?";
+		cin>>input;
+		if (input == 'y'){
+			continue;
+		}else if (input == 'n'){
+			break;
+		}else {
+			cout << "please Enter valid input! ";
+		}
+ 	}
+		return (0);
 }
