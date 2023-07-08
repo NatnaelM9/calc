@@ -18,14 +18,14 @@ int divv(int x, int y){
 	return x / y;
 }
 
-int main()
+int main(void)
 {		
 	while(true)
 	{
 		int x, y;
 		char op, input;
 
-		cout << " Enter op(+,-,*,/) ";
+		cout << "Enter op(+,-,*,/) ";
 		cin >> op;
 		cout << "Enter the First number: ";
 		cin >> x;
@@ -39,7 +39,7 @@ int main()
 		} else if (op == '*'){
 			cout << x << " * " << y << " = " << mul(x, y) << endl;
 		} else if (op == '/'){
-			cout << x << " / " << y << " = " << div(x, y) << endl;
+			cout << x << " / " << y << " = " << divv(x, y) << endl;
 		} else {
 			cout << "Please use correct op" << endl;
 		}
