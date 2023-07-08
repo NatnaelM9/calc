@@ -14,12 +14,23 @@ int mul(int x, int y){
 	return x * y;
 }
 
-int div(int x, int y){
+int divv(int x, int y){
 	return x / y;
 }
 
-int main(void)
+int main()
 {
+	int x,y;
+	char op;
+	cout << " Enter op: ";
+	cin>>op;
+	cout << "Enter the First number: ";
+	cin>>x;
+	cout << "Enter the sec number: ";
+	cin>>y;
 	
+	if (op == '+'){
+		cout << x << " + " << y<< " = " <<add(x,y);
+	}
 	return (0);
 }
