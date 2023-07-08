@@ -19,18 +19,19 @@ int divv(int x, int y){
 }
 
 int main()
-{		while(true){
-	
-		int x,y;
-		char op;
-	
-		cout << " Enter op( +,-,*,/) ";
-		cin>>op;
+{		
+	while(true)
+	{
+		int x, y;
+		char op, input;
+
+		cout << " Enter op(+,-,*,/) ";
+		cin >> op;
 		cout << "Enter the First number: ";
-		cin>>x;
+		cin >> x;
 		cout << "Enter the sec number: ";
-		cin>>y;
-		
+		cin >> y;
+
 		if (op == '+') {
 			cout << x << " + " << y << " = " << add(x, y);
 		} else if (op == '-'){
@@ -42,16 +43,22 @@ int main()
 		} else {
 			cout << "Please use correct op" << endl;
 		}
-		char input;
-		cout << "\n Do you want to continue (y/n) ?";
-		cin>>input;
-		if (input == 'y'){
-			continue;
-		}else if (input == 'n'){
-			break;
-		}else {
-			cout << "please Enter valid input! ";
+		
+		while (true)
+		{
+			cout << "Do you want to continue (y/n) ?" << endl;
+			cin >> input;
+			
+			if (input == 'y'){
+				break;
+			} else if (input == 'n'){
+				exit(0);
+			} else {
+				cout << "please Enter valid input! " << endl;
+				continue;
+			}
 		}
  	}
-		return (0);
+
+	return (0);
 }
