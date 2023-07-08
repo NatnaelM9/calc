@@ -33,13 +33,13 @@ int main()
 		cin >> y;
 
 		if (op == '+') {
-			cout << x << " + " << y << " = " << add(x, y);
+			cout << x << " + " << y << " = " << add(x, y) << endl;
 		} else if (op == '-'){
-			cout << x << " - " << y << " = " << sub(x, y);
+			cout << x << " - " << y << " = " << sub(x, y) << endl;
 		} else if (op == '*'){
-			cout << x << " * " << y << " = " << mul(x, y);
+			cout << x << " * " << y << " = " << mul(x, y) << endl;
 		} else if (op == '/'){
-			cout << x << " / " << y << " = " << divv(x, y);
+			cout << x << " / " << y << " = " << div(x, y) << endl;
 		} else {
 			cout << "Please use correct op" << endl;
 		}
