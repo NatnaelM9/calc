@@ -22,6 +22,7 @@ int main()
 {
 	int x,y;
 	char op;
+
 	cout << " Enter op: ";
 	cin>>op;
 	cout << "Enter the First number: ";
@@ -29,8 +30,17 @@ int main()
 	cout << "Enter the sec number: ";
 	cin>>y;
 	
-	if (op == '+'){
-		cout << x << " + " << y<< " = " <<add(x,y);
+	if (op == '+') {
+		cout << x << " + " << y << " = " << add(x, y);
+	} else if (op == '-'){
+		cout << x << " - " << y << " = " << sub(x, y);
+	} else if (op == '*'){
+		cout << x << " * " << y << " = " << mul(x, y);
+	} else if (op == '/'){
+		cout << x << " / " << y << " = " << div(x, y);
+	} else {
+		cout << "Please use correct op" << endl;
 	}
+	
 	return (0);
 }
