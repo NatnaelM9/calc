@@ -26,7 +26,15 @@ int main()
 		char op, input;
 
 		cout << " Enter op(+,-,*,/) ";
+		while (true){
 		cin >> op;
+		if (op != '+'&& op != '-' && op != '*' && op != '/'){
+			cout << " please use the correct op! (+,-,*,/) ";
+			continue;
+		}else {
+			break;
+		}
+	}
 		cout << "Enter the First number: ";
 		cin >> x;
 		cout << "Enter the sec number: ";
@@ -39,10 +47,10 @@ int main()
 		} else if (op == '*'){
 			cout << x << " * " << y << " = " << mul(x, y) << endl;
 		} else if (op == '/'){
-			cout << x << " / " << y << " = " << div(x, y) << endl;
-		} else {
-			cout << "Please use correct op" << endl;
-		}
+			cout << x << " / " << y << " = " << divv(x, y) << endl;
+		} //else {
+		//	cout << "Please use correct op" << endl;
+		//}
 		
 		while (true)
 		{
