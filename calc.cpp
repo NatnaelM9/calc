@@ -24,13 +24,8 @@ int main(void)
 	{
 		int x, y;
 		char op, input;
-
-<<<<<<< HEAD
-		cout << " Enter op(+,-,*,/) ";
+		cout << "\n Enter op(+,-,*,/) ";
 		while (true){
-=======
-		cout << "Enter op(+,-,*,/) ";
->>>>>>> e2d6d4785f62a0b62c14d47ce812a0c841f83ca1
 		cin >> op;
 		if (op != '+'&& op != '-' && op != '*' && op != '/'){
 			cout << " please use the correct op! (+,-,*,/) ";
@@ -52,15 +47,11 @@ int main(void)
 			cout << x << " * " << y << " = " << mul(x, y) << endl;
 		} else if (op == '/'){
 			cout << x << " / " << y << " = " << divv(x, y) << endl;
-<<<<<<< HEAD
+
 		} //else {
 		//	cout << "Please use correct op" << endl;
 		//}
-=======
-		} else {
-			cout << "Please use correct op" << endl;
-		}
->>>>>>> e2d6d4785f62a0b62c14d47ce812a0c841f83ca1
+
 		
 		while (true)
 		{
