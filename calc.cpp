@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
+//*
 int add(int x, int y){
 	return x + y;
 }
@@ -34,10 +34,24 @@ int main(void)
 			break;
 		}
 	}
+		
+		while (true) 
+	{
 		cout << "Enter the First number: ";
 		cin >> x;
 		cout << "Enter the sec number: ";
 		cin >> y;
+                if(!cin)
+                {
+			   		    if(cin.fail()){
+			    		cin.clear();
+			     		cin.ignore();
+			   			cout << "\n Invalid" << endl;
+					}
+               }
+               else break;
+	}
+
 
 		if (op == '+') {
 			cout << x << " + " << y << " = " << add(x, y) << endl;
@@ -71,3 +85,21 @@ int main(void)
 
 	return (0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
